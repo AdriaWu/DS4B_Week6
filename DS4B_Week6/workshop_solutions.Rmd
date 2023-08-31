@@ -16,6 +16,19 @@ output:
 
 # Bonus section
 
+
 ## Loading the data
 
+```{r}
+library(tidyverse)
+data <- read_csv("raw_data/data.csv")
+data
+```
+
 ## An interesting plot
+
+```{r}
+# make a plot
+ggplot(data, aes(x = TempC, y = weight, colour = Sex)) +
+  geom_point()
+```
