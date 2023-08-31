@@ -26,7 +26,6 @@ data
 
 ## An interesting plot
 
-
 ```{r}
 # make a plot
 ggplot(data, aes(x = TempC, y = weight, colour = Sex)) +
